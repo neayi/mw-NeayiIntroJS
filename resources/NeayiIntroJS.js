@@ -28,6 +28,12 @@ var neayiintrojs_controller = (function () {
 
 		initialize: function () {
 
+			if (!$('#side-map').is(":visible"))
+			{
+				$( 'a.neayi-tour' ).parent().remove();
+				return;
+			}
+
 			var triplePerformanceTour = introJs();
 
 			triplePerformanceTour.setOptions({
