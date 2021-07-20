@@ -1,0 +1,64 @@
+{
+	"name": "NeayiIntroJS",
+	"version": "1.0",
+	"author": [
+		"[https://www.mediawiki.org/wiki/User:BertrandGorge Bertrand Gorge]"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:NeayiIntroJS",
+	"descriptionmsg": "neayiintrojs-desc",
+	"manifest_version": 1,
+	"type": "parserhook",
+	"license-name": "MIT",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"MessagesDirs": {
+		"NeayiIntroJS": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.NeayiIntroJS": {
+			"scripts": [
+				"NeayiIntroJS.js"
+			],
+			"dependencies": [
+				"jquery.ui",
+				"ext.bootstrap",
+				"ext.introJS"
+			],
+			"targets": [
+				"desktop",
+				"mobile"
+			],
+			"messages": [
+				"NeayiIntroJS-buttontext-Neayi-permalink"
+			]
+		},		
+		"ext.introJS": {
+			"localBasePath": "modules/ext.introJS",
+			"remoteExtPath": "NeayiIntroJS/introjs/ext.introJS",
+			"styles": [
+				"introjs.min.css"
+			],
+			"packageFiles": [
+				"intro.min.js"
+			]
+		}	
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "NeayiIntroJS/resources"
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\NeayiIntroJS\\": "includes/"
+	},
+	"APIModules": {
+
+	},
+	"Hooks": {
+		"BeforePageDisplay": "MediaWiki\\Extension\\NeayiIntroJS\\NeayiIntroJSHooks::initializeJS"
+	},
+	"config": {
+	}
+}
