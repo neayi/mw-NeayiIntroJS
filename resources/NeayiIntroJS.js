@@ -40,7 +40,7 @@ var neayiintrojs_controller = (function () {
 				
 				steps: [{
 				  title: 'Bienvenue',
-				  intro: 'Bienvenu sur Triple Performance! 👋'
+				  intro: 'Bienvenue sur Triple Performance! 👋'
 				},
 				{
 				  element: document.querySelector('.interaction-bloc .interaction-buttons'),
