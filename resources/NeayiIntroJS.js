@@ -79,7 +79,7 @@ var neayiintrojs_controller = (function () {
 				{
 					element: document.querySelector('#neayi-add-button'),
 					title: 'Créer du contenu',
-					intro: 'Cette plateforme est la vôtre ! Vous souhaitez partager une manière particulière de faire ? N\'hésitez pas !! <span style="color:red">❤️</span>'
+					intro: 'Cette plateforme est la vôtre ! Vous souhaitez partager une manière particulière de faire ? N\'hésitez pas !! <span class="text-primary">❤</span>'
 				},				
 				{
 				  title: 'C\'est ouvert à tous !',
