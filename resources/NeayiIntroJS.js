@@ -43,6 +43,8 @@ var neayiintrojs_controller = (function () {
 				scrollToElement: false,
 				nextLabel: 'Suivant',
 				prevLabel: 'Précédent',
+				doneLabel: "C'est top !",
+				hidePrev: true,
 
 				steps: [{
 				  title: 'Bienvenue',
