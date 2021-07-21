@@ -28,7 +28,9 @@ var neayiintrojs_controller = (function () {
 
 		initialize: function () {
 
-			if (!$('#side-map').is(":visible"))
+			// If the side-map is not shown (on mobiles) or if the map is not 
+			// shown (special pages, home, ...), abort the tour:
+			if (!$('#side-map').is(":visible") || $('#side-map svg').length == 0)
 			{
 				$( 'a.neayi-tour' ).parent().remove();
 				return;
