@@ -38,6 +38,8 @@ var neayiintrojs_controller = (function () {
 
 			triplePerformanceTour.setOptions({
 				
+				scrollToElement: false,
+
 				steps: [{
 				  title: 'Bienvenue',
 				  intro: 'Bienvenue sur Triple Performance! 👋'
@@ -65,7 +67,7 @@ var neayiintrojs_controller = (function () {
 					intro: 'Cliquez là ou dans la carte pour accéder à la communauté de ceux qui s\'intéressent à cette page...'
 				},
 				{
-					title: 'Une communauté pour chaque page !',
+					title: 'Une communauté par sujet !',
 					element: document.querySelector('#side-map-container'),
 					intro: 'Entrez en contact avec d\'autres agris, conseillers, experts, même s\'ils ne sont pas dans le même département ou sur les mêmes productions...!',
 					position: 'left'
@@ -73,7 +75,7 @@ var neayiintrojs_controller = (function () {
 				{
 					element: document.querySelector('#neayi-add-button'),
 					title: 'Créer du contenu',
-					intro: 'Cette plateforme est la vôtre ! Vous souhaitez partager une manière particulière de faire ? N\'hésitez pas !! ❤'
+					intro: 'Cette plateforme est la vôtre ! Vous souhaitez partager une manière particulière de faire ? N\'hésitez pas !! <span style="color:red">❤️</span>'
 				},				
 				{
 				  title: 'C\'est ouvert à tous !',
