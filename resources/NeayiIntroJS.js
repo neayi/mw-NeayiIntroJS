@@ -66,8 +66,9 @@ var neayiintrojs_controller = (function () {
 				},
 				{
 					title: 'Une communauté pour chaque page !',
-					element: document.querySelector('#side-map'),
-					intro: 'Entrez en contact avec d\'autres agris, conseillers, experts, même s\'ils ne sont pas dans le même département ou sur les mêmes productions...!'
+					element: document.querySelector('#side-map-container'),
+					intro: 'Entrez en contact avec d\'autres agris, conseillers, experts, même s\'ils ne sont pas dans le même département ou sur les mêmes productions...!',
+					position: 'left'
 				},
 				{
 					element: document.querySelector('#neayi-add-button'),
