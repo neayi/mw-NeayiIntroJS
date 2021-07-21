@@ -30,7 +30,7 @@ var neayiintrojs_controller = (function () {
 
 			// If the side-map is not shown (on mobiles) or if the map is not 
 			// shown (special pages, home, ...), abort the tour:
-			if (!$('#side-map').is(":visible") || $('#side-map svg').length == 0)
+			if (!$('#side-map').is(":visible") || !mw.config.get('CommentStreams'))
 			{
 				$( 'a.neayi-tour' ).parent().remove();
 				return;
@@ -41,6 +41,8 @@ var neayiintrojs_controller = (function () {
 			triplePerformanceTour.setOptions({
 				
 				scrollToElement: false,
+				nextLabel: 'Suivant',
+				prevLabel: 'Précédent',
 
 				steps: [{
 				  title: 'Bienvenue',
