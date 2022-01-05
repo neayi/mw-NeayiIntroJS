@@ -28,7 +28,7 @@ var neayiintrojs_controller = (function () {
 
 		initialize: function () {
 
-			// If the side-map is not shown (on mobiles) or if the map is not 
+			// If the side-map is not shown (on mobiles) or if the map is not
 			// shown (special pages, home, ...), abort the tour:
 			if (!$('#side-map').is(":visible") || !mw.config.get('CommentStreams'))
 			{
@@ -39,7 +39,7 @@ var neayiintrojs_controller = (function () {
 			var triplePerformanceTour = introJs();
 
 			triplePerformanceTour.setOptions({
-				
+
 				scrollToElement: false,
 				nextLabel: 'Suivant',
 				prevLabel: 'Précédent',
@@ -68,7 +68,7 @@ var neayiintrojs_controller = (function () {
 					position: 'left'
 				},
 				{
-					element: document.querySelector('.interaction-bloc .neayi-interaction-suivre-label'),
+					element: document.querySelector('#side-map .side-map-legend'),
 					title: 'Interagir avec la page',
 					intro: 'Cliquez là ou dans la carte pour accéder à la communauté de ceux qui s\'intéressent à cette page...'
 				},
@@ -82,7 +82,7 @@ var neayiintrojs_controller = (function () {
 					element: document.querySelector('#neayi-add-button'),
 					title: 'Créer du contenu',
 					intro: 'Cette plateforme est la vôtre ! Vous souhaitez partager une manière particulière de faire ? N\'hésitez pas !! <span class="text-primary">❤</span>'
-				},				
+				},
 				{
 				  title: 'C\'est ouvert à tous !',
 				  intro: 'La plateforme est ouverte à tous ! On est ici pour parler technique, dans le respect des trajectoires de chacun ! Pas de bashing ici !<br><br><img style="width:100%" src="https://i.giphy.com/media/KP5J5Ss9moWaI/giphy.webp" onerror="this.onerror=null;this.src=\'https://i.giphy.com/KP5J5Ss9moWaI.gif\';" alt="">'
