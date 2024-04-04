@@ -69,6 +69,6 @@ class NeayiIntroJS
 		$params = [];
 
 		$output->addJsConfigVars('NeayiIntroJS', $params);
-		$output->addModules('ext.NeayiIntroJS');
+		$output->addModules(['ext.NeayiIntroJS']);
 	}
 }
