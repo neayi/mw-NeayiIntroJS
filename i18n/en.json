@@ -1,8 +1,22 @@
 {
-	"@metadata": {
-		"authors": [
-			"Bertrand Gorge"
-		]
-	},
-	"neayiintrojs-desc": "Adds the Neayi IntroJS in wiki pages"
+    "@metadata": {
+            "authors": [
+                "Bertrand Gorge"
+            ]
+        },
+    "introjs-next-label": "Following",
+    "introjs-prev-label": "Previous",
+    "introjs-done-label": "It's great!",
+    "introjs-step1-title": "Welcome",
+    "introjs-step1-intro": "Welcome to Triple Performance! 👋",
+    "introjs-step2-title": "Interact with the page",
+    "introjs-step2-intro": "Here are the buttons that allow you to interact with the page",
+    "introjs-step3-title": "Interact with the page",
+    "introjs-step3-intro": "Click on follow to stay informed of discussions on this page, or when it evolves",
+    "introjs-step4-title": "Interact with the page",
+    "introjs-step4-intro": "Do not hesitate to ask questions on the subject, only those who follow the page will be notified",
+    "introjs-step5-title": "Create content",
+    "introjs-step5-intro": "This platform is yours! Would you like to share a particular way of doing things? Don't hesitate!!",
+    "introjs-step6-title": "It's open to everyone!",
+    "introjs-step6-intro": "The platform is open to everyone! We are here to talk technical, while respecting everyone's trajectories! No bashing here!"
 }

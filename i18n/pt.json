@@ -1,0 +1,22 @@
+{
+    "@metadata": {
+            "authors": [
+                "Bertrand Gorge"
+            ]
+        },
+    "introjs-next-label": "Seguindo",
+    "introjs-prev-label": "Anterior",
+    "introjs-done-label": "É ótimo!",
+    "introjs-step1-title": "Bem-vindo",
+    "introjs-step1-intro": "Bem-vindo ao Triple Performance! 👋",
+    "introjs-step2-title": "Interaja com a página",
+    "introjs-step2-intro": "Aqui estão os botões que permitem interagir com a página",
+    "introjs-step3-title": "Interaja com a página",
+    "introjs-step3-intro": "Clique em seguir para se manter informado sobre as discussões nesta página ou quando ela evolui",
+    "introjs-step4-title": "Interaja com a página",
+    "introjs-step4-intro": "Não hesite em tirar dúvidas sobre o assunto, somente quem segue a página será avisado",
+    "introjs-step5-title": "Crie conteúdo",
+    "introjs-step5-intro": "Esta plataforma é sua! Você gostaria de compartilhar uma maneira específica de fazer as coisas? Não hesite!!",
+    "introjs-step6-title": "Está aberto a todos!",
+    "introjs-step6-intro": "A plataforma está aberta a todos! Estamos aqui para falar de forma técnica, respeitando a trajetória de todos! Não há críticas aqui!"
+}

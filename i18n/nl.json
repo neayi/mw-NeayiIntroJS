@@ -1,0 +1,22 @@
+{
+    "@metadata": {
+            "authors": [
+                "Bertrand Gorge"
+            ]
+        },
+    "introjs-next-label": "Volgende",
+    "introjs-prev-label": "Vorig",
+    "introjs-done-label": "Het is geweldig!",
+    "introjs-step1-title": "Welkom",
+    "introjs-step1-intro": "Welkom bij Triple Performance! 👋",
+    "introjs-step2-title": "Interactie met de pagina",
+    "introjs-step2-intro": "Hier vindt u de knoppen waarmee u met de pagina kunt communiceren",
+    "introjs-step3-title": "Interactie met de pagina",
+    "introjs-step3-intro": "Klik op volgen om op de hoogte te blijven van de discussies op deze pagina, of wanneer deze evolueert",
+    "introjs-step4-title": "Interactie met de pagina",
+    "introjs-step4-intro": "Aarzel niet om vragen over het onderwerp te stellen, alleen degenen die de pagina volgen, worden op de hoogte gebracht",
+    "introjs-step5-title": "Creëer inhoud",
+    "introjs-step5-intro": "Dit platform is van jou! Wil je een bepaalde manier van doen delen? Aarzel niet!!",
+    "introjs-step6-title": "Het is voor iedereen toegankelijk!",
+    "introjs-step6-intro": "Het platform is voor iedereen toegankelijk! We zijn hier om over technische zaken te praten, met respect voor ieders traject! Geen bashen hier!"
+}

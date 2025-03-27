@@ -16,11 +16,17 @@
 		"NeayiIntroJS": [
 			"i18n"
 		]
-	},
+	},	
 	"ResourceModules": {
 		"ext.NeayiIntroJS": {
 			"scripts": [
+				
+				"intro.min.js",
 				"NeayiIntroJS.js"
+
+			],
+			"styles": [
+				"introjs.min.css"
 			],
 			"dependencies": [
 				"jquery.ui",
@@ -32,7 +38,21 @@
 				"mobile"
 			],
 			"messages": [
-				"NeayiIntroJS-buttontext-Neayi-permalink"
+				"introjs-next-label",
+				"introjs-prev-label",
+				"introjs-done-label",
+				"introjs-step1-title",
+				"introjs-step1-intro",
+				"introjs-step2-title",
+				"introjs-step2-intro",
+				"introjs-step3-title",
+				"introjs-step3-intro",
+				"introjs-step4-title",
+				"introjs-step4-intro",
+				"introjs-step5-title",
+				"introjs-step5-intro",
+				"introjs-step6-title",
+				"introjs-step6-intro"
 			]
 		},		
 		"ext.introJS": {

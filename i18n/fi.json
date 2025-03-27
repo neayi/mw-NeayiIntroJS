@@ -1,0 +1,22 @@
+{
+    "@metadata": {
+            "authors": [
+                "Bertrand Gorge"
+            ]
+        },
+    "introjs-next-label": "Jälkeen",
+    "introjs-prev-label": "Edellinen",
+    "introjs-done-label": "Se on hienoa!",
+    "introjs-step1-title": "Tervetuloa",
+    "introjs-step1-intro": "Tervetuloa Triple Performanceen! 👋",
+    "introjs-step2-title": "Ole vuorovaikutuksessa sivun kanssa",
+    "introjs-step2-intro": "Tässä ovat painikkeet, joiden avulla voit olla vuorovaikutuksessa sivun kanssa",
+    "introjs-step3-title": "Ole vuorovaikutuksessa sivun kanssa",
+    "introjs-step3-intro": "Napsauta seuraa pysyäksesi ajan tasalla tämän sivun keskusteluista tai niiden kehittymisestä",
+    "introjs-step4-title": "Ole vuorovaikutuksessa sivun kanssa",
+    "introjs-step4-intro": "Älä epäröi esittää kysymyksiä aiheesta, vain sivua seuraaville ilmoitetaan",
+    "introjs-step5-title": "Luo sisältöä",
+    "introjs-step5-intro": "Tämä alusta on sinun! Haluatko jakaa tietyn tavan tehdä asioita? Älä epäröi!!",
+    "introjs-step6-title": "Se on avoin kaikille!",
+    "introjs-step6-intro": "Alusta on avoin kaikille! Olemme täällä puhumassa teknisistä asioista kunnioittaen samalla kaikkien liikeradat! Täällä ei ryöstää!"
+}

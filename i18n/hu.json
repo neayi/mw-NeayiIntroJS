@@ -1,0 +1,22 @@
+{
+    "@metadata": {
+            "authors": [
+                "Bertrand Gorge"
+            ]
+        },
+    "introjs-next-label": "Következő",
+    "introjs-prev-label": "Előző",
+    "introjs-done-label": "Ez nagyszerű!",
+    "introjs-step1-title": "Üdvözöljük",
+    "introjs-step1-intro": "Üdvözöljük a Triple Performance oldalán! 👋",
+    "introjs-step2-title": "Interakció az oldallal",
+    "introjs-step2-intro": "Itt vannak azok a gombok, amelyek lehetővé teszik az oldallal való interakciót",
+    "introjs-step3-title": "Interakció az oldallal",
+    "introjs-step3-intro": "Kattintson a Követés gombra, hogy értesüljön az ezen az oldalon zajló vitákról vagy azok alakulásáról",
+    "introjs-step4-title": "Interakció az oldallal",
+    "introjs-step4-intro": "Ne habozzon kérdéseket feltenni a témában, csak az oldalt követőket értesítjük",
+    "introjs-step5-title": "Hozzon létre tartalmat",
+    "introjs-step5-intro": "Ez a platform a tiéd! Szeretné megosztani a dolgok egy bizonyos módját? Ne habozzon!!",
+    "introjs-step6-title": "Mindenki előtt nyitva áll!",
+    "introjs-step6-intro": "A platform mindenki számára nyitott! Azért vagyunk itt, hogy technikai kérdésekről beszéljünk, miközben tiszteletben tartjuk mindenki pályáját! Nincs itt durvakodás!"
+}

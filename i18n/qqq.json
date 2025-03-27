@@ -1,8 +1,22 @@
 {
-	"@metadata": {
-		"authors": [
-			"Bertrand Gorge"
-		]
-	},
-	"neayiintrojs-desc": "{{desc|name=NeayiIntroJS|url=https://neayi.com}}"
+    "@metadata": {
+            "authors": [
+                "Bertrand Gorge"
+            ]
+        },
+    "introjs-next-label": null,
+    "introjs-prev-label": null,
+    "introjs-done-label": null,
+    "introjs-step1-title": null,
+    "introjs-step1-intro": null,
+    "introjs-step2-title": null,
+    "introjs-step2-intro": null,
+    "introjs-step3-title": null,
+    "introjs-step3-intro": null,
+    "introjs-step4-title": null,
+    "introjs-step4-intro": null,
+    "introjs-step5-title": null,
+    "introjs-step5-intro": null,
+    "introjs-step6-title": null,
+    "introjs-step6-intro": null
 }

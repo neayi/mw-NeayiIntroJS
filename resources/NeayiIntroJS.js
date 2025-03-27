@@ -28,11 +28,15 @@ var neayiintrojs_controller = (function () {
 
 		initialize: function () {
 
+			// If we are not on a proper article, abort
+			var pageId = mw.config.get('wgArticleId');
+			if (pageId == 0)
+				return;
+
 			// If the side-map is not shown (on mobiles) or if the map is not
 			// shown (special pages, home, ...), abort the tour:
-			if (!$('#side-map').is(":visible") || !mw.config.get('CommentStreams'))
-			{
-				$( 'a.neayi-tour' ).parent().remove();
+			if (!$('.interaction-bloc').is(":visible")) {
+				$('a.neayi-tour').parent().remove();
 				return;
 			}
 
@@ -41,76 +45,67 @@ var neayiintrojs_controller = (function () {
 			triplePerformanceTour.setOptions({
 
 				scrollToElement: false,
-				nextLabel: 'Suivant',
-				prevLabel: 'Précédent',
-				doneLabel: "C'est top !",
+				nextLabel: mw.msg("introjs-next-label"),
+				prevLabel: mw.msg("introjs-prev-label"),
+				doneLabel: mw.msg("introjs-done-label"),
 				hidePrev: true,
-
+				
 				steps: [{
-				  title: 'Bienvenue',
-				  intro: 'Bienvenue sur Triple Performance! 👋'
+					title: mw.msg("introjs-step1-title"), //"Bienvenue",
+					intro: mw.msg("introjs-step1-intro") //"Bienvenue sur Triple Performance! 👋"
 				},
 				{
-				  element: document.querySelector('.interaction-bloc .interaction-buttons'),
-				  title: 'Interagir avec la page',
-				  intro: 'Voici les boutons qui permettent d\'interagir avec la page'
+					element: document.querySelector(".interaction-bloc .interaction-buttons"),
+					title: mw.msg("introjs-step2-title"), //"Interagir avec la page",
+					intro: mw.msg("introjs-step2-intro") //"Voici les boutons qui permettent d'interagir avec la page"
 				},
 				{
-					element: document.querySelector('.interaction-bloc .neayi-interaction-suivre'),
-					title: 'Interagir avec la page',
-					intro: 'Cliquez sur "suivre" pour rester informé des discussions sur cette page, ou bien quand celle-ci évolue',
-					position: 'left'
+					element: document.querySelector(".interaction-bloc .neayi-interaction-suivre"),
+					title: mw.msg("introjs-step3-title"), //"Interagir avec la page",
+					intro: mw.msg("introjs-step3-intro"), //'Cliquez sur "suivre" pour rester informé des discussions sur cette page, ou bien quand celle-ci évolue',
+					position: "left"
 				},
 				{
-					element: document.querySelector('.interaction-bloc .neayi-interaction-doneit'),
-					title: 'Interagir avec la page',
-					intro: 'Cliquez sur "Je le fais" pour indiquer aux autres que vous faites cette technique chez vous (ça marche aussi pour les productions, ou bien si vous avez affronté un type de ravageur particulier) 💪',
-					position: 'left'
+					element: document.querySelector(".interaction-bloc .interaction-discussions"),
+					title: mw.msg("introjs-step4-title"), //"Interagir avec la page",
+					intro: mw.msg("introjs-step4-intro"), //"N'hésitez pas à poser des questions sur le sujet, seuls ceux qui suivent la page seront notifiés",
+					position: "left"
 				},
 				{
-					element: document.querySelector('#side-map .side-map-legend'),
-					title: 'Interagir avec la page',
-					intro: 'Cliquez là ou dans la carte pour accéder à la communauté de ceux qui s\'intéressent à cette page...'
+					element: document.querySelector("#neayi-add-button"),
+					title: mw.msg("introjs-step5-title"), //"Créer du contenu",
+					intro: mw.msg("introjs-step5-intro") //"Cette plateforme est la vôtre ! Vous souhaitez partager une manière particulière de faire ? N'hésitez pas !!"
+						+ '<span class="text-primary">❤</span>'
 				},
 				{
-					title: 'Une communauté par sujet !',
-					element: document.querySelector('#side-map-container'),
-					intro: 'Entrez en contact avec d\'autres agris, conseillers, experts, même s\'ils ne sont pas dans le même département ou sur les mêmes productions...!',
-					position: 'left'
-				},
-				{
-					element: document.querySelector('#neayi-add-button'),
-					title: 'Créer du contenu',
-					intro: 'Cette plateforme est la vôtre ! Vous souhaitez partager une manière particulière de faire ? N\'hésitez pas !! <span class="text-primary">❤</span>'
-				},
-				{
-				  title: 'C\'est ouvert à tous !',
-				  intro: 'La plateforme est ouverte à tous ! On est ici pour parler technique, dans le respect des trajectoires de chacun ! Pas de bashing ici !<br><br><img style="width:100%" src="https://i.giphy.com/media/KP5J5Ss9moWaI/giphy.webp" onerror="this.onerror=null;this.src=\'https://i.giphy.com/KP5J5Ss9moWaI.gif\';" alt="">'
+					title: mw.msg("introjs-step6-title"), //"C'est ouvert à tous !",
+					intro: mw.msg("introjs-step6-intro") //"La plateforme est ouverte à tous ! On est ici pour parler technique, dans le respect des trajectoires de chacun ! Pas de bashing ici !" +
+						+ '<br><br><img style="width:100%" src="https://i.giphy.com/media/KP5J5Ss9moWaI/giphy.webp" alt="">'
 				}]
 			  })
-			.oncomplete(function() {
-				localStorage.setItem('TriplePerformanceTour', 'done');
-			})
-			.onexit(function() {
+			.oncomplete(function () {
+					localStorage.setItem('TriplePerformanceTour', 'done');
+				})
+			.onexit(function () {
 				localStorage.setItem('TriplePerformanceTour', 'done');
 			});
 
 
-			$( 'a.neayi-tour' ).on('click', function (e) {
-				e.preventDefault();
-				triplePerformanceTour.start();
-			});
+		$( 'a.neayi-tour').on('click', function (e) {
+			e.preventDefault();
+			triplePerformanceTour.start();
+		});
 
-			var tourDone = (localStorage.getItem('TriplePerformanceTour') === 'done');
+		var tourDone = (localStorage.getItem('TriplePerformanceTour') === 'done');
 
-			if (tourDone)
+		if(tourDone)
 				return;
 
-			triplePerformanceTour.start();
-		}
+		triplePerformanceTour.start();
+	}
 
 
-	}; // return line 26
+}; // return line 26
 }());
 
 window.NeayiIntroJSController = neayiintrojs_controller;
