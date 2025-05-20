@@ -4,7 +4,7 @@
                 "Bertrand Gorge"
             ]
         },
-    "introjs-next-label": "Jälkeen",
+    "introjs-next-label": "Seuraavaksi",
     "introjs-prev-label": "Edellinen",
     "introjs-done-label": "Se on hienoa!",
     "introjs-step1-title": "Tervetuloa",
@@ -12,11 +12,11 @@
     "introjs-step2-title": "Ole vuorovaikutuksessa sivun kanssa",
     "introjs-step2-intro": "Tässä ovat painikkeet, joiden avulla voit olla vuorovaikutuksessa sivun kanssa",
     "introjs-step3-title": "Ole vuorovaikutuksessa sivun kanssa",
-    "introjs-step3-intro": "Napsauta seuraa pysyäksesi ajan tasalla tämän sivun keskusteluista tai niiden kehittymisestä",
+    "introjs-step3-intro": "Napsauta seuraa pysyäksesi ajan tasalla tämän sivun keskusteluista tai sen muutoksista.",
     "introjs-step4-title": "Ole vuorovaikutuksessa sivun kanssa",
-    "introjs-step4-intro": "Älä epäröi esittää kysymyksiä aiheesta, vain sivua seuraaville ilmoitetaan",
+    "introjs-step4-intro": "Aiheesta saa esittää kysymyksiä, vain sivua seuraaville ilmoitetaan",
     "introjs-step5-title": "Luo sisältöä",
-    "introjs-step5-intro": "Tämä alusta on sinun! Haluatko jakaa tietyn tavan tehdä asioita? Älä epäröi!!",
+    "introjs-step5-intro": "Tämä alusta on sinun! Onko sinulla jokin tietty tapa tehdä asioita, jotka haluaisit jakaa? Älä epäröi!!",
     "introjs-step6-title": "Se on avoin kaikille!",
-    "introjs-step6-intro": "Alusta on avoin kaikille! Olemme täällä puhumassa teknisistä asioista kunnioittaen samalla kaikkien liikeradat! Täällä ei ryöstää!"
+    "introjs-step6-intro": "Alusta on avoin kaikille! Olemme täällä keskustelemassa teknisistä asioista kaikkien polkuja kunnioittaen! Ei ryöstöä täällä!"
 }
